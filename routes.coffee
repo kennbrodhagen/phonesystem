@@ -21,5 +21,6 @@ router = (app) ->
 
 	app.server.get '/home', homeController.index
 	app.server.get '/calls', callsController.index
+	app.server.post '/callevents', callsController.callevents
 
 module.exports = router

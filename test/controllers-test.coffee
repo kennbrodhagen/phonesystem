@@ -51,6 +51,13 @@ describe "Controllers", ->
 				_controllerInspector.renderedArgs.calls.should.be.an.instanceOf(Array)
 
 
+		describe "CallsController.callevents method tests", ->		
+
+			it "should render twilio/callevents template", ->
+				_controller.callevents _controllerInspector.req, _controllerInspector.res
+				should.exist _controllerInspector.renderedTemplate, "Should assign template"
+				_controllerInspector.renderedTemplate.should.equal 'twiml/callevents', "Should render twilio/callevents template"
+
 
 
 

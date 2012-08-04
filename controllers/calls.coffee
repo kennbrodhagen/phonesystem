@@ -19,4 +19,10 @@ class CallsController
 			#app.log.info renderArgs, "CallsController.index:"
 			res.render 'calls-index', renderArgs 
 
+	callevents: (req, res) =>
+		app = @app
+		app.log.info req.body, "CallsController.callevents"
+		renderArgs = {call: {number: 1}}
+		res.render 'twiml/callevents', renderArgs
+
 module.exports = CallsController

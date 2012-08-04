@@ -2,14 +2,15 @@ libxmljs			= require "libxmljs"
 request				= require "request"
 should				= require "should"
 
+# Helper for the root uri to be used in various functions
+uriRoot = (app) ->
+	#console.log "*** before app = #{app}"
+	"http://localhost:#{app.server.settings.port}"
+	#console.log "*** after app = #{app}"
 
 # Test the main page navigation
 describe 'Page Navigation', ->
 	app = null
-
-	# Helper for the root uri to be used in various functions
-	uriRoot = () ->
-		"http://localhost:#{app.server.settings.port}/"
 
 	# Start and stop the web server on the boundaries of this test suite.
 	before (done) ->
@@ -39,6 +40,7 @@ describe 'Page Navigation', ->
 	# Parses and save the body as an html dom object.
 	# It's nice to provide the additional description argument since these functions are called from many places.
 	_confirmRequestStatusAndParse = (expectedStatus, err, response, body, callback) ->
+		#app.log.info {response: body}, "Response #{response}"
 		should.not.exist err, "Request returned an error: #{JSON.stringify(err)}."
 		should.exist  response, "Response is null."
 		response.should.have.status expectedStatus, "Response did not return expected status."
@@ -77,7 +79,7 @@ describe 'Page Navigation', ->
 	describe 'View the root page /', ->
 
 		it "Should redirect to the home page for more Google juice", (done) ->
-			request.get {uri:"#{uriRoot()}", followRedirect:false}, (err, response, body) ->
+			request.get {uri:"#{uriRoot(app)}/", followRedirect:false}, (err, response, body) ->
 				_confirmRequestStatusAndParse 302, err, response, body, () ->
 					done()
 
@@ -85,13 +87,13 @@ describe 'Page Navigation', ->
 
 		it "Should have should have the site name in the title", (done) ->
 			#app.log.info "\n\n*** BODYDOC:\n #{JSON.stringify(_bodyDoc)}\n\n"
-			request.get {uri:"#{uriRoot()}home"}, (err, response, body) ->
+			request.get {uri:"#{uriRoot(app)}/home"}, (err, response, body) ->
 				_confirmRequestStatusAndParse 200, err, response, body, (bodyDoc) ->
 					_textOfElement(bodyDoc, '//head/title').should.match /Site Name/
 					done()
 
 		it "Should have a link to the todo list", (done) ->
-			request.get {uri:"#{uriRoot()}home"}, (err, response, body) ->
+			request.get {uri:"#{uriRoot(app)}/home"}, (err, response, body) ->
 				_confirmRequestStatusAndParse 200, err, response, body, (bodyDoc) ->
 					_textOfElement(bodyDoc, "//a[@id='todos-index' and @href='/todos']").should.match /Todos/
 					done()
@@ -100,7 +102,7 @@ describe 'Page Navigation', ->
 		_bodyDoc = null
 
 		before (done) ->
-			request.get {uri:"#{uriRoot()}calls"}, (err, response, body) ->
+			request.get {uri:"#{uriRoot(app)}/calls"}, (err, response, body) ->
 				_confirmRequestStatusAndParse 200, err, response, body, (bodyDoc) ->	
 					_bodyDoc = bodyDoc	
 					done()	
@@ -116,6 +118,11 @@ describe 'Page Navigation', ->
 		it "should have a calls with the calling party 6789826238", ->
 			_containsTextUnderElement("6789826238", _bodyDoc, "//td").should.equal true, "test number not shown"
 
-describe "Handle new inbound call", ->
+	describe "Handle new call event", ->
+
+		it "Should render twilio twiml", (done) ->
+			request.post {uri:"#{uriRoot(app)}/callevents"}, (err, response, body) ->
+				_confirmRequestStatusAndParse 200, err, response, body, () ->
+					done()
 
 

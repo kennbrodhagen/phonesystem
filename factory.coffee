@@ -1,6 +1,6 @@
 class TestStore
 	constructor: (@calls) ->
-	findAllCalls: (callback) ->
+	findAllCalls: (callback) =>
 		callback null, @calls
 
 class Factory
@@ -31,11 +31,11 @@ class Factory
 		log = @createLogWithNameAndStreams(name,streams)
 		return log	
 
-	createProductionStore: () =>
-		return @createTestStore()
+	createProductionStore: (calls) =>
+		return @createTestStore(calls)
 
-	createTestStore: (todos) =>
-		return new TestStore(todos)
+	createTestStore: (calls) =>
+		return new TestStore(calls)
 
 
 module.exports = new Factory()

@@ -15,7 +15,8 @@ describe 'Page Navigation', ->
 	before (done) ->
 		factory = require "../factory"
 		App = require "../app"
-		app = new App factory.createTestLog(), factory.createTestStore()
+		testCalls = [{id: 1, start:"1976-08-18 21:00:00.000-04", duration:180, callingParty:"6789826238"}, {id: 2, start:"1970-08-20 00:00:00.000-04", duration:180, callingParty:"7709928775"}]
+		app = new App factory.createTestLog(), factory.createTestStore(testCalls)
 		app.server.listen app.server.settings.port, () ->
 			app.log.info "Test server listening on port #{app.server.settings.port} in #{app.server.settings.env} mode"
 			done()

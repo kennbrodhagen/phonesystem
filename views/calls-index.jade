@@ -28,16 +28,11 @@
 							th Duration
 							th Caller
 					tbody
-						tr
-							td 
-								a.btn(href='/calls/1/play') Play »
-							td 1976-08-18 21:00:00.000-04
-							td 3:00
-							td 6789826238
-						tr
-							td 
-								a.btn(href='/calls/2/play') Play »
-							td 1976-08-20 00:00:00.000-04
-							td 4:20
-							td 7709928775
+						each call in calls
+							tr
+								td 
+									a.btn(href="/calls/#{call.id}/play") Play »
+								td= call.start
+								td= call.duration
+								td= call.callingParty
 	include footer

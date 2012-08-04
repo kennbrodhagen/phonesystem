@@ -13,6 +13,7 @@ class CallsController
 
 	index: (req, res) =>
 		#@app.log.info {req: req}, "callsController#index"
-		res.render 'calls-index', {title: 'calls'}
+		@app.store.findAllCalls (err, calls) ->
+			res.render 'calls-index', {title: 'calls', calls:calls}
 
 module.exports = CallsController

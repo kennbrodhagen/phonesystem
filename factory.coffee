@@ -1,16 +1,7 @@
 class TestStore
-	items: {}
-
-	constructor: (todos) ->
-		if todos?
-			for todo in todos
-				@items[todo.id] = todo
-
-	findItemById: (id) =>
-		return @items[id]
-
-	updateItem: (item) =>
-		@items[item.id] = item
+	constructor: (@calls) ->
+	findAllCalls: (callback) ->
+		callback null, @calls
 
 class Factory
 	createLogWithNameAndStreams: (name,streams) =>

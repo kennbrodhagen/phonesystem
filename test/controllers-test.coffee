@@ -2,11 +2,12 @@ should				= require "should"
 
 describe "Controllers", ->
 	app = null
-	before ->
+	before (done)->
 		factory = require "../factory"
 		App = require "../app"
 		testCalls = [{id: 1, start:"1976-08-18 21:00:00.000-04", duration:180, callingParty:"6789826238"}, {id: 2, start:"1970-08-20 00:00:00.000-04", duration:180, callingParty:"7709928775"}]
 		app = new App(factory.createTestLog(), factory.createTestStore(testCalls))
+		done()
 
 	describe "Calls Controller", ->
 
@@ -33,16 +34,21 @@ describe "Controllers", ->
 		_controller = null
 
 		beforeEach ->
-			app.log.info "Re-creating inspector and controller"
 			_controllerInspector = new ControllerInspector
 			_controller = new (require "../controllers/calls")(app)
 			
+		describe "CallsController.index method tests", ->		
 
-		it "should render index for calls", ->
-			_controller.index _controllerInspector.req, _controllerInspector.res
-			should.exist _controllerInspector.renderedTemplate, "Should render template"
-			_controllerInspector.renderedTemplate.should.equal 'calls-index', "Should render calls template"
+			it "should render calls-index template", ->
+				_controller.index _controllerInspector.req, _controllerInspector.res
+				should.exist _controllerInspector.renderedTemplate, "Should render template"
+				_controllerInspector.renderedTemplate.should.equal 'calls-index', "Should render calls template"
 
+			it "should include calls in rendered args", ->
+				_controller.index _controllerInspector.req, _controllerInspector.res
+				should.exist _controllerInspector.renderedArgs, "Should have renderedArgs"
+				should.exist _controllerInspector.renderedArgs.calls, "Should have renderedArgs.calls"
+				_controllerInspector.renderedArgs.calls.should.be.an.instanceOf(Array)
 
 
 

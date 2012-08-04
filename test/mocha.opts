@@ -1,0 +1,6 @@
+--growl
+--watch
+--require should
+--require coffee-script
+-R spec
+--ui bdd

@@ -1,0 +1,44 @@
+.navbar.navbar-fixed-top
+	.navbar-inner
+		.container
+			a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.brand(href='#') Project name
+			.nav-collapse
+				ul.nav
+					li.active
+						a(href='#') Home
+					li
+						a(href='#about') About
+					li
+						a(href='#contact') Contact
+.container
+	//
+		Main hero unit for a primary marketing message or call to action 
+	section#callsGrid
+			.page-header
+					h1 Calls
+				table.table.table-bordered.table-striped
+					thead
+						tr
+							th Date &amp; Time
+							th Duration
+							th Caller
+							th 
+					tbody
+						tr
+							td 1976-08-18 21:00:00.000-04
+							td 3:00
+							td 6789826238
+							td 
+								a.btn.btn-primary(href='/calls/1/play') Play »
+
+						tr
+							td 1976-08-20 00:00:00.000-04
+							td 4:20
+							td 7709928775
+							td 
+								a.btn.btn-primary(href='/calls/2/play') Play »
+	include footer

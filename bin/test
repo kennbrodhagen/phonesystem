@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+# Setup the Node environment for test so when mocha runs it uses the test specific settings
+export NODE_ENV="test"
+
+# When command line args are provided, pass only those args to mocha.
+# Otherwise, pass our default args
+MOCHA_ARGS=""
+if [ -n "$*" ]; then
+  MOCHA_ARGS=$*
+else
+  MOCHA_ARGS="test/*.coffee"
+fi
+
+clear
+./node_modules/mocha/bin/mocha $MOCHA_ARGS
+

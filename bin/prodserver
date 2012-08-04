@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+# Setup the Node environment for production so when the server runs it uses prod specific settings
+export NODE_ENV="production"
+
+# When command line args are provided, pass only those args to mocha.
+# Otherwise, pass our default args
+ARGS=""
+if [ -n "$*" ]; then
+  ARGS=$*
+else
+  ARGS="--watch .,lib,routes --extensions node|js|coffee server.js"
+fi
+
+clear
+./node_modules/.bin/supervisor $ARGS
+

@@ -1,0 +1,55 @@
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28333,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T05:47:47.439Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28417,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T05:47:58.611Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28417,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T05:49:52.883Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28417,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T05:50:05.443Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28417,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T05:50:05.480Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28417,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T05:50:05.482Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28417,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T05:50:05.484Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28417,"level":30,"msg":"Test server listening on port 3002 in test mode","time":"2012-08-04T05:50:05.485Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28598,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:03:38.511Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28598,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T06:03:38.544Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28598,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T06:03:38.546Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28598,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:05:03.650Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28598,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T06:05:03.654Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28598,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T06:05:03.654Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28598,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:05:03.656Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28598,"level":30,"msg":"Test server listening on port 3002 in test mode","time":"2012-08-04T06:05:03.657Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28613,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:05:12.289Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28613,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T06:05:12.298Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28613,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T06:05:12.299Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28613,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:05:12.301Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28613,"level":30,"msg":"Test server listening on port 3002 in test mode","time":"2012-08-04T06:05:12.302Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28613,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:12:15.105Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28613,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T06:12:15.109Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28613,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T06:12:15.110Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28613,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:12:15.112Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:12:24.100Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T06:12:24.106Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T06:12:24.106Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:12:24.109Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Test server listening on port 3002 in test mode","time":"2012-08-04T06:12:24.110Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Test server shutting down.","time":"2012-08-04T06:12:24.257Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:13:45.457Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T06:13:45.463Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T06:13:45.463Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:13:45.466Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Test server listening on port 3002 in test mode","time":"2012-08-04T06:13:45.466Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Test server shutting down.","time":"2012-08-04T06:13:45.561Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:14:25.528Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T06:14:25.531Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T06:14:25.532Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:14:25.533Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Test server listening on port 3002 in test mode","time":"2012-08-04T06:14:25.534Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Test server shutting down.","time":"2012-08-04T06:14:25.621Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:22:12.127Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T06:22:12.131Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T06:22:12.132Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:22:12.134Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Test server listening on port 3002 in test mode","time":"2012-08-04T06:22:12.135Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28704,"level":30,"msg":"Test server shutting down.","time":"2012-08-04T06:22:12.267Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28775,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:23:21.981Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28775,"level":30,"msg":"Re-creating inspector and controller","time":"2012-08-04T06:23:21.988Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28775,"level":30,"template":"calls-index","args":{"title":"calls"},"msg":"ControllerInspector.res.render:","time":"2012-08-04T06:23:21.989Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28775,"level":30,"store":{},"msg":"router init store = [object Object]","time":"2012-08-04T06:23:21.991Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28775,"level":30,"msg":"Test server listening on port 3002 in test mode","time":"2012-08-04T06:23:21.991Z","v":0}
+{"name":"phonesystem-test","hostname":"kenn-timecapsule","pid":28775,"level":30,"msg":"Test server shutting down.","time":"2012-08-04T06:23:22.145Z","v":0}

@@ -13,5 +13,5 @@ else
 fi
 
 clear
-./node_modules/.bin/supervisor $ARGS
+./node_modules/.bin/supervisor $ARGS | ./node_modules/.bin/bunyan
 

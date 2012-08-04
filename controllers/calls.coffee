@@ -16,7 +16,7 @@ class CallsController
 		app = @app
 		app.store.findAllCalls (err, calls) ->
 			renderArgs = {title: 'calls', calls:calls}
-			app.log.info renderArgs, "CallsController.index:"
+			#app.log.info renderArgs, "CallsController.index:"
 			res.render 'calls-index', renderArgs 
 
 module.exports = CallsController

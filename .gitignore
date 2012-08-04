@@ -9,3 +9,5 @@ express-template1-test.log
 express-template1-prod.log
 
 phonesystem-prod.log
+
+phonesystem-test.log

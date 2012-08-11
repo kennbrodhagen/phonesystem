@@ -11,3 +11,7 @@ express-template1-prod.log
 phonesystem-prod.log
 
 phonesystem-test.log
+
+bunyan.log
+
+heroku.log

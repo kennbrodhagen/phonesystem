@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+clear
+
+# pull down the heroku logs, last 100 lines, and save to a file
+# we can't pipe the output directly into bunyan because bunyan will freeze up.
+# I think bunyan has trouble reading the stream because it comes in with more latency from the network.
+heroku logs --num 100 --source app | sed "s/.*app\[web\..*\]\: //" > heroku.log
+cat heroku.log | ./node_modules/.bin/bunyan
+
+# also output bunyan to a file
+# replace this portion of the bunyan log with blanks
+# : phonesystem-prod/2 on 65605565-28c7-4692-be10-5c4e6ff4ea8d: 
+# [^ tab]\+ word
+cat heroku.log | ./node_modules/.bin/bunyan > bunyan.log
+
+

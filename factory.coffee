@@ -17,9 +17,7 @@ class Factory
 
 	createProductionLog: () =>
 		name = "phonesystem-prod"
-		streams = [
-			{stream: process.stdout, level: "debug"}
-			{path: "#{name}.log", level: "info"}]
+		streams = [{stream: process.stdout, level: "debug"}]
 
 		log = @createLogWithNameAndStreams(name,streams)
 		return log	

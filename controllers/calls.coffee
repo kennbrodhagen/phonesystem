@@ -21,7 +21,7 @@ class CallsController
 
 	callevents: (req, res) =>
 		app = @app
-		app.log.info {req: req}, "CallsController.callevents"
+		app.log.info {body: req.body}, "CallsController.callevents"
 		renderArgs = {call: {number: 1}}
 		res.render 'twiml/callevents', renderArgs
 
